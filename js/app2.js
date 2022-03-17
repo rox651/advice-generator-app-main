@@ -24,5 +24,8 @@ async function adviceGenerator() {
 
 adviceDice.addEventListener("click", () => {
   adviceGenerator();
-  adviceCont.classList.toggle("animation");
+  adviceCont.classList.add("animation");
+  setTimeout(() => {
+    adviceCont.classList.remove("animation");
+  }, 800);
 });
